@@ -1,0 +1,65 @@
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+label {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+
+  
+}
+
+.text {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  /* background-color: aqua; */
+  border-radius: 10px;
+  margin-right: 50px;
+  
+}
+
+.check {
+  display: none;
+}
+
+/* .check:checked ~ .text {
+  background-color: sienna;
+} */
+
+.check:checked ~ #tennis_img {
+  background: url(./img/table-tennis.png) no-repeat center center  ;
+}
+.check:checked ~ #basketbol_img {
+  background: url(./img/basketball-ball.png) no-repeat center center  ;
+}
+.check:checked ~ #volleybol_img {
+  background: url(./img/volleyball-ball.png) no-repeat center center  ;
+}
+.check:checked ~ #hokkey_img {
+  background: url(./img/hockey-puck.png) no-repeat center center  ;
+}
+
+.hokkey {
+  opacity: 0.3;
+  
+}
+
+.volleybol {
+  opacity: 0.5 ;
+}
+
+.content {
+  margin-bottom: 10px;
+}
